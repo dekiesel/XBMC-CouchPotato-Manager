@@ -87,7 +87,7 @@ class CouchPotatoApi():
         return self._api_call('status.list').get('list', [])
 
     def get_movies(self, **params):
-        return self._api_call('movie.list', params).get('movies', [])
+        return self._api_call('movie.list', params).get('media', [])
 
     def search_wanted(self, search_title):
         params = {
